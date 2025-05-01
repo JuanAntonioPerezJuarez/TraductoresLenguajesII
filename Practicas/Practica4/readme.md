@@ -1,28 +1,28 @@
-# Mathematical Expression Parser and Evaluator
+# Analizador y Evaluador de Expresiones Matemáticas
 
-This Python script (`practica4.py`) implements a mathematical expression parser and evaluator using recursive descent parsing techniques. It converts mathematical expressions into an abstract syntax tree (AST), then evaluates or displays them in different notations.
+Este script de Python (`practica4.py`) implementa un analizador y evaluador de expresiones matemáticas utilizando técnicas de análisis sintáctico descendente recursivo. Convierte expresiones matemáticas en un árbol de sintaxis abstracta (AST), y luego las evalúa o muestra en diferentes notaciones.
 
-## Features
+## Características
 
-- Lexical analysis to tokenize mathematical expressions
-- Syntax analysis to build an abstract syntax tree
-- Support for basic operations: addition, subtraction, multiplication, and division
-- Evaluation of expressions containing only numeric values
-- Display of expressions in both infix and postfix notation
-- Error handling for syntax errors and division by zero
+- Análisis léxico para tokenizar expresiones matemáticas
+- Análisis sintáctico para construir un árbol de sintaxis abstracta
+- Soporte para operaciones básicas: suma, resta, multiplicación y división
+- Evaluación de expresiones que contienen únicamente valores numéricos
+- Visualización de expresiones en notación infija y postfija
+- Manejo de errores para errores de sintaxis y división por cero
 
-## How It Works
+## Cómo Funciona
 
-The program consists of several components:
+El programa consta de varios componentes:
 
-1. **Lexer**: Converts the input string into tokens using regular expressions
-2. **Parser**: Implements a recursive descent parser to build an AST according to grammar rules
-3. **Tree Nodes**: Represent operations and values in the AST
-4. **Tree Traversal**: Functions to evaluate and display the AST
+1. **Lexer**: Convierte la cadena de entrada en tokens utilizando expresiones regulares
+2. **Parser**: Implementa un analizador descendente recursivo para construir un AST según reglas gramaticales
+3. **Nodos del Árbol**: Representan operaciones y valores en el AST
+4. **Recorrido del Árbol**: Funciones para evaluar y mostrar el AST
 
-### Grammar Rules
+### Reglas Gramaticales
 
-The parser implements the following grammar:
+El analizador implementa la siguiente gramática:
 
 ```
 E → T {(+ | -) T}
@@ -30,64 +30,64 @@ T → F {(* | /) F}
 F → (E) | ID | NUM
 ```
 
-Where:
-- E represents an expression
-- T represents a term
-- F represents a factor
-- ID represents an identifier (variable)
-- NUM represents a number
+Donde:
+- E representa una expresión
+- T representa un término
+- F representa un factor
+- ID representa un identificador (variable)
+- NUM representa un número
 
-## Usage
+## Uso
 
-Run the script and enter a mathematical expression when prompted:
+Ejecute el script e ingrese una expresión matemática cuando se le solicite:
 
 ```
 python practica4.py
 ```
 
-### Example
+### Ejemplo
 
-Input:
+Entrada:
 ```
 Ingrese la expresión matemática: (5+3)*2-4/2
 ```
 
-Output:
+Salida:
 ```
 Expresión en notación postfija: 5 3 + 2 * 4 2 / -
 Expresión en notación infija: ((5 + 3) * 2) - (4 / 2)
 Resultado de la operación: 14.0
 ```
 
-## Classes and Functions
+## Clases y Funciones
 
-### Classes
+### Clases
 
-- `Nodo`: Represents an operation node in the AST (internal node)
-- `Hoja`: Represents a leaf node (number or identifier)
-- `Lexer`: Tokenizes the input expression
-- `Parser`: Builds the AST based on grammar rules
+- `Nodo`: Representa un nodo de operación en el AST (nodo interno)
+- `Hoja`: Representa un nodo hoja (número o identificador)
+- `Lexer`: Tokeniza la expresión de entrada
+- `Parser`: Construye el AST basado en reglas gramaticales
 
-### Functions
+### Funciones
 
-- `imprimir_postorden()`: Converts the AST to postfix notation
-- `imprimir_infijo()`: Converts the AST to infix notation with parentheses
-- `evaluar_arbol()`: Evaluates the expression tree (only works with numeric values)
+- `imprimir_postorden()`: Convierte el AST a notación postfija
+- `imprimir_infijo()`: Convierte el AST a notación infija con paréntesis
+- `evaluar_arbol()`: Evalúa el árbol de expresión (solo funciona con valores numéricos)
 
-## Limitations
+## Limitaciones
 
-- Cannot evaluate expressions containing variables (identifiers)
-- Only supports basic arithmetic operations (+, -, *, /)
-- No support for exponentiation or other advanced operations
+- No puede evaluar expresiones que contienen variables (identificadores)
+- Solo soporta operaciones aritméticas básicas (+, -, *, /)
+- No hay soporte para exponenciación u otras operaciones avanzadas
 
-## Error Handling
+## Manejo de Errores
 
-The script handles the following types of errors:
+El script maneja los siguientes tipos de errores:
 
-- Syntax errors (when the expression doesn't follow the grammar)
-- Division by zero
-- Attempt to evaluate an expression containing variables
+- Errores de sintaxis (cuando la expresión no sigue la gramática)
+- División por cero
+- Intento de evaluar una expresión que contiene variables
 
-## License
+## Licencia
 
-[Insert your license information here]
+[Inserte su información de licencia aquí]
