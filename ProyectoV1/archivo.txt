@@ -1,0 +1,11 @@
+x = 10
+y = 5
+suma = x + y
+resta = x - y
+multiplicacion = x * y
+division = x / y
+print('Resultados:')
+print('Suma:', suma)
+print('Resta:', resta)
+print('Multiplicacion:', multiplicacion)
+print('Division:', division)

@@ -1,0 +1,9 @@
+base = 15
+altura = 8
+area = base * altura
+perimetro = 2 * (base + altura)
+print('Medidas del rectángulo:')
+print('Base:', base)
+print('Altura:', altura)
+print('Área:', area)
+print('Perímetro:', perimetro)
