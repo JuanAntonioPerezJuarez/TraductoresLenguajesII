@@ -1,0 +1,40 @@
+t1 = begin
+t2 = entero
+t3 = a
+
+t4 = a
+= = t4
+t5 = 1
+
+t6 = if
+t7 = a
+t8 = t6 <t7
+t9 = 10
+t10 = while
+t11 = a
+t12 = t10 <t11
+t13 = 10
+t14 = a
+= = t14
+t15 = a
+t16 = t14 +t15
+t17 = 1
+
+t18 = endwhile
+
+t19 = else
+t20 = while
+t21 = a
+t22 = t20 >t21
+t23 = 0
+t24 = a
+= = t24
+t25 = a
+t26 = t24 -t25
+t27 = 1
+
+t28 = endwhile
+
+t29 = end
+
+t30 = end

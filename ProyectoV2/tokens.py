@@ -1,0 +1,23 @@
+# tokens.py
+tokens = {
+ 'Palabra reservada': r'[a-zA-Z][a-zA-Z0-9]*',
+ 'ENTERO': r'\d+',
+ 'REAL': r'\d+\.\d+',
+ 'SUMA': r'\+',
+ 'RESTA': r'\-',
+ 'SALTO LINEA': r'\n',
+ 'MULTIPLICACION': r'\*',
+ 'DIVISION': r'\/',
+ 'ASIGNACION': r'=',
+ 'OPERADOR_RELACIONAL': r'<|>|<=|>=|!=|==',
+ 'AND_LOGICO': r'&&',
+ 'OR_LOGICO': r'\|\|',
+ 'NOT_LOGICO': r'!',
+ 'PARENTESIS_IZQUIERDO': r'\(',
+ 'PARENTESIS_DERECHO': r'\)',
+ 'LLAVE_IZQUIERDA': r'{',
+ 'LLAVE_DERECHA': r'}',
+ 'PUNTO_Y_COMA': r';',
+ 'Comillas': r'"',
+ 'COMA': r',',
+}
